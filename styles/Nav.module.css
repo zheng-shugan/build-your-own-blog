@@ -1,0 +1,64 @@
+.container {
+	width: 100vw;
+	padding: 25px 60px;
+	display: flex;
+	align-items: center;
+	color: var(--element1);
+}
+
+.signature {
+	font-size: 20px;
+	font-family: 'Cedarville Cursive', sans-serif;
+	margin-right: auto;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	gap: 22px;
+	font-size: 16px;
+}
+
+.icon {
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.icon:hover {
+	color: var(--element3);
+}
+
+.link {
+	transition: 0.3s;
+}
+
+.link:hover {
+	color: var(--element3);
+}
+
+.mobile {
+	display: none;
+}
+
+.laptop {
+	display: block;
+}
+
+@media screen and (max-width: 600px) {
+	.mobile {
+		display: block;
+	}
+
+	.laptop {
+		display: none;
+	}
+
+	.container {
+		padding: 10px 25px;
+	}
+
+	.nav {
+		gap: 13px;
+	}
+}

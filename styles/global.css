@@ -1,0 +1,143 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  --surface1: #cccccc;
+  --surface2: #f2f2f2;
+  --surface3: #ffffff;
+  --surface4: #f9f9f9;
+  --element1: #555555;
+  --element2: #333333;
+  --element3: #000000;
+  --element4: #aaaaaa;
+  --element5: #888888;
+  --element6: #e0e0e0;
+  --element7: #eeeeee;
+  --element8: #b3b3b3;
+  --element9: #918f8f;
+  --hljs0: #f3f3f3;
+  --hljs1: #444444;
+  --hljs2: #697070;
+  --hljs3: #7d7d7d;
+  --hljs4: #7c160d;
+  --hljs5: #ab5656;
+  --hljs6: #71975c;
+  --hljs7: #48711e;
+  --hljs9: #4d8fb2;
+  --elementInverse: #eee;
+  --primary: #01408e;
+  --secondary: #3c5d5c;
+  --tertiary: #fff7d6;
+}
+
+/*!
+  Theme: Default
+  Description: Original highlight.js style
+  Author: (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
+  Maintainer: @highlightjs/core-team
+  Website: https://highlightjs.org/
+  License: see project LICENSE
+  Touched: 2021
+*/
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+code.hljs {
+  padding: 3px 5px;
+}
+.hljs {
+  background: var(--hljs0);
+  color: var(--hljs1);
+}
+.hljs-comment {
+  color: var(--hljs2);
+}
+.hljs-punctuation,
+.hljs-tag {
+  color: var(--hljs3);
+}
+.hljs-tag .hljs-attr,
+.hljs-tag .hljs-name {
+  color: var(--hljs1);
+}
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-name,
+.hljs-selector-tag {
+  font-weight: 500;
+}
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+  color: var(--hljs4);
+}
+.hljs-section,
+.hljs-title {
+  color: var(--hljs4);
+  font-weight: 500;
+}
+.hljs-link,
+.hljs-operator,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+  color: var(--hljs5);
+}
+.hljs-literal {
+  color: var(--hljs6);
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+  color: var(--hljs7);
+}
+.hljs-meta {
+  color: var(--hljs7);
+}
+.hljs-meta .hljs-string {
+  color: var(--hljs9);
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: 500;
+}
