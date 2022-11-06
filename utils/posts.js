@@ -11,12 +11,14 @@ const postsDirectory = path.join(process.cwd(), 'posts');
 export const getSortedPostsData = () => {
   // 获得在 /posts 文件夹里的 .md 文件
   const fileNames = fs.readdirSync(postsDirectory);
-  const allPostsData = fileNames.map((fileName) => {
+  // 移除 .DS_Store 文件
+  const postNames = fileNames.filter((file) => file !== '.DS_Store')
+  const allPostsData = postNames.map((postName) => {
     // 移除 .md 的扩展名，获取 id
-    const id = fileName.replace(/\.md$/, '')
+    const id = postName.replace(/\.md$/, '')
 
     // 用字符串存储 markdown 文章
-    const fullPath = path.join(postsDirectory, fileName)
+    const fullPath = path.join(postsDirectory, postName)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
 
     // 使用 gray-matter 解析文章数据部分
@@ -56,7 +58,8 @@ export const getAllPostIds = () => {
   //   }
   // ]
   // 获取所有 markdown 文章名
-  const fileNames = fs.readdirSync(postsDirectory)
+  let fileNames = fs.readdirSync(postsDirectory)
+  fileNames = fileNames.filter((name) => name !== '.DS_Store')
 
   return fileNames.map(fileName => {
     return {
